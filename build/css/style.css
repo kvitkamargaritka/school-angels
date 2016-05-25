@@ -29,6 +29,12 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-skrill:before { content: ""; }
 
+.bg-yellow-l { background-color: #fbdc88; }
+
+.bg-blue-l { background-color: #a3d7d1; }
+
+.bg-red-l { background-color: #f6898b; }
+
 @font-face { font-family: "museo100"; src: url("fonts/museosanscyrl-100.eot"); src: url("fonts/museosanscyrl-100.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-100.woff2") format("woff2"), url("fonts/museosanscyrl-100.woff") format("woff"), url("fonts/museosanscyrl-100.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "museo300"; src: url("fonts/museosanscyrl-300.eot"); src: url("fonts/museosanscyrl-300.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-300.woff2") format("woff2"), url("fonts/museosanscyrl-300.woff") format("woff"), url("fonts/museosanscyrl-300.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "museo300ital"; src: url("fonts/museosanscyrl-300italic.eot"); src: url("fonts/museosanscyrl-300italic.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-300italic.woff2") format("woff2"), url("fonts/museosanscyrl-300italic.woff") format("woff"), url("fonts/museosanscyrl-300italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -48,6 +54,11 @@ img { width: 100%; }
 
 .logo { margin: 0 auto; width: 400px; }
 
+.quote { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font-family: "museo300", Arial, sans-serif; padding: 280px 0 30px; background: url("../img/polygon.svg") no-repeat; background-size: cover; text-align: left; font-size: 30px; color: #fff; }
+.quote__quotes { font-family: "museo300ital", Arial, sans-serif; margin-left: -30px; font-size: 35px; }
+.quote__quotes:last-child { margin-left: 0; margin-right: -30px; text-align: right; }
+.quote__autor { text-align: right; font-size: 23px; }
+
 .nav { font-family: "museo500", Arial, sans-serif; }
 .nav__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 .nav__el { margin: 0 11px; }
@@ -61,12 +72,12 @@ img { width: 100%; }
 
 .section { margin-top: 72px; }
 .section__line { margin: 0 auto 20px; width: 50px; height: 3px; background-color: #f03a3e; }
-.section__title { font-family: "museo500", Arial, sans-serif; font-size: 18px; letter-spacing: 1.5px; text-align: center; text-transform: uppercase; }
+.section__title { font-family: "museo500", Arial, sans-serif; margin-bottom: 20px; font-size: 18px; letter-spacing: 1.5px; text-align: center; text-transform: uppercase; }
 
-.registration .list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
-.registration .list__top { min-height: 250px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+.registration .list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; text-align: center; }
+.registration .list__top { min-height: 250px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 .registration .list__img { width: 155px; }
-.registration .list__link { text-transform: uppercase; }
+.registration .list__link { font-family: "museo500", Arial, sans-serif; display: block; padding: 10px 50px; width: 237px; font-size: 18px; text-transform: uppercase; color: #fff; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 

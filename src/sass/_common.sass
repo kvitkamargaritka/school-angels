@@ -36,6 +36,12 @@ $yellowLight: #fbdc88
 $blueLight: #a3d7d1
 $redLight: #f6898b
 
+.bg-yellow-l
+  background-color: $yellowLight
+.bg-blue-l
+  background-color: $blueLight
+.bg-red-l
+  background-color: $redLight
 
 +font('museo100', museosanscyrl-100)
 +font('museo300', museosanscyrl-300)
@@ -85,6 +91,8 @@ img
   width: 950px
   margin: 0 auto
 
+//main styles
+
 .top-line
   margin-top: 30px
   margin-bottom: 10px
@@ -93,5 +101,28 @@ img
 .logo
   margin: 0 auto
   width: 400px
+  
+.quote
+  display: flex
+  justify-content: center
 
-//main styles
+  +h300
+  padding: 280px 0 30px
+  background: url("../img/polygon.svg") no-repeat
+  background-size: cover
+  text-align: left
+  font-size: 30px
+  color: #fff
+
+  &__quotes
+    +h300i
+    margin-left: -30px
+    font-size: 35px
+    &:last-child
+      margin-left: 0
+      margin-right: -30px
+      text-align: right
+
+  &__autor
+    text-align: right
+    font-size: 23px
