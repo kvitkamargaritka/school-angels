@@ -1,0 +1,52 @@
+.news
+  +h300
+
+  .list
+    margin-top: 70px
+    margin-bottom: 100px
+    display: flex
+    justify-content: space-between
+
+    &__el
+      width: 24%
+
+  .event
+
+    &__date
+      display: block
+      margin-bottom: 45px
+      font-size: 12px
+      text-transform: uppercase
+
+      b
+        +h500
+        position: relative
+        margin-right: 33px
+        font-size: 24px
+        &::after
+          position: absolute
+          content: ''
+          bottom: 15px
+          right: -42px
+          height: 1px
+          width: 50px
+          background-color: $greyLight
+          transform: rotate(-55deg)
+
+    &__text
+      margin-bottom: 25px
+      &_light
+        color: $greyLight
+
+  .video
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 400px
+    background: url("../img/bg-video.jpg") center
+    background-size: cover
+    span
+      text-align: center
+      font-size: 60px
+      text-transform: uppercase
+      color: #fff
