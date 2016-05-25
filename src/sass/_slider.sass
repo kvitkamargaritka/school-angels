@@ -1,0 +1,49 @@
+.slider
+  width: 100%
+
+  .swiper-slide
+    text-align: center
+
+  .slide
+    display: flex
+    justify-content: space-between
+    background: url("../img/bg-girl.png") center no-repeat
+
+    &__left,
+    &__right
+      width: 33%
+      text-align: left
+
+    &__left
+      +h300
+      margin-top: 230px
+      margin-bottom: 50px
+      font-size: 18px
+      color: $grey
+
+    &__right
+      margin-top: 80px
+      color: $greyLight
+
+    .quotes
+      +h300i
+      margin-left: -40px
+      line-height: .7
+      font-size: 60px
+      color: #a14664
+      &:last-child
+        text-align: right
+        margin-left: 0
+        margin-right: -40px
+
+  .list
+    +h300
+
+    &__el
+      margin-top: 12px
+
+      span
+        margin-left: 14px
+      &:first-child
+        font-size: 18px
+        color: $grey

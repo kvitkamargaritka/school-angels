@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
-	// go js
+  var swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
+  });
 
 });
