@@ -1,0 +1,75 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+@font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
+
+.icon-sepa:before { content: ""; }
+
+.icon-skrill:before { content: ""; }
+
+@font-face { font-family: "museo100"; src: url("fonts/museosanscyrl-100.eot"); src: url("fonts/museosanscyrl-100.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-100.woff2") format("woff2"), url("fonts/museosanscyrl-100.woff") format("woff"), url("fonts/museosanscyrl-100.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo300"; src: url("fonts/museosanscyrl-300.eot"); src: url("fonts/museosanscyrl-300.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-300.woff2") format("woff2"), url("fonts/museosanscyrl-300.woff") format("woff"), url("fonts/museosanscyrl-300.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo300ital"; src: url("fonts/museosanscyrl-300italic.eot"); src: url("fonts/museosanscyrl-300italic.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-300italic.woff2") format("woff2"), url("fonts/museosanscyrl-300italic.woff") format("woff"), url("fonts/museosanscyrl-300italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo500"; src: url("fonts/museosanscyrl-500.eot"); src: url("fonts/museosanscyrl-500.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-500.woff2") format("woff2"), url("fonts/museosanscyrl-500.woff") format("woff"), url("fonts/museosanscyrl-500.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo500ital"; src: url("fonts/museosanscyrl-500italic.eot"); src: url("fonts/museosanscyrl-500italic.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-500italic.woff2") format("woff2"), url("fonts/museosanscyrl-500italic.woff") format("woff"), url("fonts/museosanscyrl-500italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo700"; src: url("fonts/museosanscyrl-700.eot"); src: url("fonts/museosanscyrl-700.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-700.woff2") format("woff2"), url("fonts/museosanscyrl-700.woff") format("woff"), url("fonts/museosanscyrl-700.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo900"; src: url("fonts/museosanscyrl-900.eot"); src: url("fonts/museosanscyrl-900.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-900.woff2") format("woff2"), url("fonts/museosanscyrl-900.woff") format("woff"), url("fonts/museosanscyrl-900.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { font-family: "museo300", Arial, sans-serif; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.4; color: #131313; }
+
+a { color: #131313; text-decoration: none; cursor: pointer; }
+
+img { width: 100%; }
+
+.container { width: 950px; margin: 0 auto; }
+
+.top-line { margin-top: 30px; margin-bottom: 10px; text-align: right; }
+
+.logo { margin: 0 auto; width: 400px; }
+
+.nav { font-family: "museo500", Arial, sans-serif; }
+.nav__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.nav__el { margin: 0 11px; }
+.nav__link { color: #9a9a9a; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.nav__link.is-active { color: #131313; }
+
+.ico { display: inline-block; vertical-align: middle; }
+.ico_person { background: url(../img/ico-person.png); width: 17px; height: 17px; }
+
+.btn { background-color: transparent; font-size: 14px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; }
+
+.section { margin-top: 72px; }
+.section__line { margin: 0 auto 20px; width: 50px; height: 3px; background-color: #f03a3e; }
+.section__title { font-family: "museo500", Arial, sans-serif; font-size: 18px; letter-spacing: 1.5px; text-align: center; text-transform: uppercase; }
+
+.registration .list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.registration .list__top { min-height: 250px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+.registration .list__img { width: 155px; }
+.registration .list__link { text-transform: uppercase; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+ *{ -webkit-text-size-adjust: none; } }
+
+
+
+/*# sourceMappingURL=style.css.map */
