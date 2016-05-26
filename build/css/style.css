@@ -204,6 +204,14 @@ img { width: 100%; }
 .quote span { width: 580px; }
 .quote__autor { text-align: right; font-size: 23px; }
 
+.project-map { margin: 10px auto; max-width: 750px; }
+
+.title { font-family: "museo300", Arial, sans-serif; color: #fff; font-size: 25px; line-height: 1; text-transform: uppercase; }
+
+.social__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+.social__el { margin-left: 13px; }
+.social__link { display: block; }
+
 .nav { font-family: "museo500", Arial, sans-serif; }
 .nav__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 .nav__el { margin: 0 11px; }
@@ -217,9 +225,14 @@ img { width: 100%; }
 .ico_fb { background: url(../img/ico-fb.png); width: 30px; height: 30px; }
 .ico_tw { background: url(../img/ico-twi.png); width: 30px; height: 30px; }
 .ico_play { background: url(../img/ico-play.png); width: 60px; height: 60px; }
+.ico_fb-w { background: url(../img/ico-fb-w.png); width: 37px; height: 37px; }
+.ico_tw-w { background: url(../img/ico-twi-w.png); width: 37px; height: 37px; }
+.ico_vk-w { background: url(../img/ico-vk-w.png); width: 37px; height: 37px; }
 
 .btn { background-color: transparent; font-size: 14px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; }
 .btn_border { padding: 10px; border: 1px solid #9a9a9a; color: #9a9a9a; }
+.btn_red { background-color: #f6898b; color: white; }
+.btn_small { padding: 12px; font-size: 12px; text-transform: uppercase; }
 
 .section { margin-top: 72px; }
 .section__line { margin: 0 auto 20px; width: 50px; height: 3px; background-color: #f03a3e; }
@@ -273,6 +286,15 @@ img { width: 100%; }
 .events__el_8 { background: url("../img/events-bg-8.png") center; }
 .events__text { width: 100%; height: 100%; padding: 35px; position: absolute; color: #fff; }
 .events__text p { font-family: "museo300ital", Arial, sans-serif; margin-bottom: 10px; }
+
+.subscribe { text-align: center; }
+.subscribe__info { font-family: "museo300", Arial, sans-serif; margin-bottom: 25px; color: #cdcdcd; }
+.subscribe .sub { margin-bottom: 60px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.subscribe .sub__field input { padding: 3px 5px; width: 430px; height: 40px; border: 1px solid #cdcdcd; font-size: 18px; }
+.subscribe .sub__action { margin-left: 10px; }
+
+.footer { padding: 30px 0; background: url("../img/polygon.svg") bottom center; background-size: cover; }
+.footer__wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 
