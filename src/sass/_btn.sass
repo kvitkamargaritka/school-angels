@@ -5,9 +5,28 @@
   cursor: pointer
 
   &_border
+    position: relative
     padding: 10px
     border: 1px solid $grey
     color: $grey
+    &:after
+      position: absolute
+      transition: all .3s ease
+      content: ''
+      width: 0
+      bottom: 0
+      left: inherit
+      right: 0
+      height: 3px
+      background: transparent
+    &:hover
+      color: $grey
+      border-color: transparent
+      &:after
+        transition: all .3s ease
+        width: 100%
+        left: 0
+        background: $grey
 
   &_red
     background-color: $redLight
@@ -17,3 +36,54 @@
     padding: 12px
     font-size: 12px
     text-transform: uppercase
+
+  &_bg-yellow,
+  &_bg-red,
+  &_bg-blue
+    position: relative
+    color: #fff
+    &:after
+      position: absolute
+      transition: all .3s ease
+      content: ''
+      width: 0
+      bottom: 0
+      left: inherit
+      right: 0
+      height: 3px
+      background: transparent
+
+  &_bg-yellow
+    background-color: $yellowLight
+    &:hover
+      color: $yellowLight
+      &:after
+        transition: all .3s ease
+        width: 100%
+        left: 0
+        background: $yellowLight
+
+  &_bg-blue
+    background-color: $blueLight
+    &:hover
+      color: $blueLight
+      &:after
+        transition: all .3s ease
+        width: 100%
+        left: 0
+        background: $blueLight
+
+  &_bg-red
+    background-color: $redLight
+    &:hover
+      color: $redLight
+      &:after
+        transition: all .3s ease
+        width: 100%
+        left: 0
+        background: $redLight
+
+  &_hover
+    transition: all .7s ease
+    &:hover
+      background: transparent

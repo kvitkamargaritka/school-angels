@@ -1,7 +1,7 @@
 // # SHORT HOWTO
 // ## Sprites
 //     .whatever
-// 			+s(codedby) 
+// 			+s(codedby)
 // ## gradient example
 //     	+g(#232323, #5c5c5c);
 //	   horizontal
@@ -36,13 +36,6 @@ $red: #f03a3e
 $yellowLight: #fbdc88
 $blueLight: #a3d7d1
 $redLight: #f6898b
-
-.bg-yellow-l
-  background-color: $yellowLight
-.bg-blue-l
-  background-color: $blueLight
-.bg-red-l
-  background-color: $redLight
 
 +font('museo100', museosanscyrl-100)
 +font('museo300', museosanscyrl-300)
@@ -79,7 +72,7 @@ body
   font-size: 14px
   line-height: 1.4
   color: $black
-  min-width: 1280px
+  min-width: 500px
 
 a
   color: $black
@@ -92,18 +85,21 @@ img
 .container
   width: 950px
   margin: 0 auto
-
+  +r(960)
+    width: auto
 //main styles
 
 .top-line
   margin-top: 30px
   margin-bottom: 10px
   text-align: right
+  +r(960)
+    padding: 0 20px
 
 .logo
   margin: 0 auto
   width: 400px
-  
+
 .quote
   display: flex
   justify-content: center
@@ -115,6 +111,8 @@ img
   text-align: left
   font-size: 30px
   color: #fff
+  +r(720)
+    display: none
 
   &__quotes
     +h300i

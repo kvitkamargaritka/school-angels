@@ -10,7 +10,10 @@
     background-size: 15px 25px
     width: 53px
     height: 80px
-    
+    +r(1180)
+      width: 28px
+      height: 36px
+
   .swiper-button-prev
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAYCAYAAAAlBadpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNWE2ZDAyOC0wMWMxLTQ4NmMtOWJkOC1lYzk2YzkyMTQ4YTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEE1QTQyM0ExQUEwMTFFNkFDRENCMTc2RjI5RkIwMTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEE1QTQyMzkxQUEwMTFFNkFDRENCMTc2RjI5RkIwMTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5ZmFhNWUzNS1hZTNhLTQyMGEtYmI1My1iNzM5MzQzNmE5MzUiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowZGQ4ODBiOS01NWFiLTExNzktYWM3Yy1mNTM3MzQ2ZDEyZmIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5cz1GTAAAAf0lEQVR42mL8//8/AwmgA4j5gTgLiP8zgDQTiTv+I8B0IGYkRyMM9JOr8RsQO5GtERxW5GrEp5mgRlyaidKITTPRGtE1k6QRWTPJGmGaydIIwkwMlABKnU1xgFEcVRQnEoqTJ8UZg+IsSXFhgM+AJnILQBCbgYWExFiBzgYIMADlXCVBQzmY7wAAAABJRU5ErkJggg==')
     background-color: #91d1b9
@@ -26,11 +29,21 @@
     display: flex
     justify-content: space-between
     background: url("../img/bg-girl.png") center bottom no-repeat
+    +r(1080)
+      flex-wrap: wrap
+      flex-direction: column-reverse
+      background-position: right bottom
+    +r(960)
+      background: none
+      align-items: center
 
     &__left,
     &__right
       width: 33%
       text-align: left
+      +r(1080)
+        width: 50%
+        margin: 30px 50px
 
     &__left
       +h300
@@ -38,6 +51,8 @@
       margin-bottom: 50px
       font-size: 18px
       color: $grey
+      +r(1080)
+        width: 50%
 
     &__right
       margin-top: 80px
