@@ -42,6 +42,7 @@ b.params.hashnav&&b.hashnav&&b.hashnav.init(),b.params.a11y&&b.a11y&&b.a11y.init
 //# sourceMappingURL=maps/swiper.min.js.map
 $(document).ready(function() {
 
+  // swiper settings
   var swiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
@@ -49,5 +50,11 @@ $(document).ready(function() {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev'
   });
+
+  // hamburger-menu
+  $('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+    $('#nav-mob').fadeToggle();
+	});
 
 });

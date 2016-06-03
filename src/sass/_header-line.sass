@@ -2,23 +2,39 @@
   margin: 25px 0
 
   &__wrap
+    position: relative
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: center
+    +r(1024)
+      padding: 0 30px
 
   .logo
     width: 85px
 
   .nav
     font-size: 16px
+    +r(1024)
+      display: none
+      position: absolute
+      top: 47px
+      right: 30px
+      padding: 20px
+      background: #fff
+      z-index: 10
+
+    &__list
+      +r(1024)
+        flex-direction: column
 
     &__el
       margin: 0 15px
+      +r(1024)
+        margin: 15px 30px
 
     &__link
       color: $greyLight
 
       &.is-active
         color: $black
-

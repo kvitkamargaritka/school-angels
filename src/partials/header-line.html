@@ -11,7 +11,7 @@
       </div>
 
       <div class="header-line__center">
-        <nav class="nav">
+        <nav class="nav" id="nav-mob">
           <ul class="nav__list">
             <li class="nav__el">
               <a href="#" class="nav__link is-active">головна</a>
@@ -36,19 +36,37 @@
             <li class="nav__el">
               <a href="#" class="nav__link">контакти</a>
             </li>
+
+            <li class="nav__el">
+              <form class="sign-in sign-in_mob" action="#">
+                <button class="btn">
+                  <i class="ico ico_person"></i>
+                  <span>увійти (кабінет)</span>
+                </button>
+              </form>
+            </li>
+
           </ul>
         </nav>
       </div>
 
       <div class="header-line__right">
 
-        <form action="#">
+        <form class="sign-in" action="#">
           <button class="btn">
             <i class="ico ico_person"></i>
             <span>увійти (кабінет)</span>
           </button>
         </form>
 
+      </div>
+
+      <div class="hamburger">
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
     </div><!-- end header-line__wrap -->
