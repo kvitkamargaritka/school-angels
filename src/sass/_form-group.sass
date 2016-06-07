@@ -27,6 +27,12 @@
       left: 0
       opacity: 1
 
+    &.input-filled ~ .form-group__label
+      opacity: 0
+    &.input-filled ~ .form-group__content
+      opacity: 1
+      left: 0
+
   &__label
     +h100
     position: absolute
@@ -54,6 +60,37 @@
     left: 0
     font-size: 14px
     color: $greyLight
+    input
+      &:checked, &:not(:checked)
+        position: absolute
+        left: -9999px
+      &:checked + span, &:not(:checked) + span
+        position: relative
+        padding-left: 28px
+        cursor: pointer
+        line-height: 20px
+        display: inline-block
+        color: $greyLight
+      &:checked + span:before, &:not(:checked) + span:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 18px
+        height: 18px
+        border: 1px solid #ddd
+        background: #fff
+      &:checked + span:after
+        content: ''
+        width: 17px
+        height: 17px
+        background: url("../img/ico-check.png") no-repeat
+        position: absolute
+        top: 3px
+        left: 0
+        -webkit-transition: all 0.2s ease
+        transition: all 0.2s ease
+
 
     span
       +h100
@@ -90,6 +127,58 @@
       display: block
       margin-bottom: 15px
       cursor: pointer
+
+      input
+        &:checked, &:not(:checked)
+          position: absolute
+          left: -9999px
+        &:checked + span, &:not(:checked) + span
+          position: relative
+          padding-left: 28px
+          cursor: pointer
+          line-height: 20px
+          display: inline-block
+          color: $greyLight
+        &:checked + span:before, &:not(:checked) + span:before
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          width: 18px
+          height: 18px
+          border: 1px solid #ddd
+          border-radius: 100%
+          background: #fff
+        &:checked + span:after
+          content: ''
+          width: 10px
+          height: 10px
+          background: #bca8bf
+          position: absolute
+          top: 4px
+          left: 4px
+          border-radius: 100%
+          -webkit-transition: all 0.2s ease
+          transition: all 0.2s ease
+        &:not(:checked) + span:after
+          content: ''
+          width: 10px
+          height: 10px
+          background: #bca8bf
+          position: absolute
+          top: 4px
+          left: 4px
+          border-radius: 100%
+          -webkit-transition: all 0.2s ease
+          transition: all 0.2s ease
+          opacity: 0
+          -webkit-transform: scale(0)
+          transform: scale(0)
+        &:checked + span:after
+          opacity: 1
+          -webkit-transform: scale(1)
+          transform: scale(1)
+
 
   &__text
     +h100
